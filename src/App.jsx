@@ -570,7 +570,7 @@ function App() {
                 </div>
                 <div>
                   <h4 style={{ color: 'var(--text-color)', marginBottom: '0.25rem' }}>E-posta</h4>
-                  <a href="mailto:ornek@email.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>harunerdogan@gmail.com</a>
+                  <a href="harunerdogan308@email.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>harunerdogan@gmail.com</a>
                 </div>
               </div>
 
@@ -594,7 +594,7 @@ function App() {
                 </div>
                 <div>
                   <h4 style={{ color: 'var(--text-color)', marginBottom: '0.25rem' }}>Telefon</h4>
-                  <a href="tel:+905555555555" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>+90 536 964 0549
+                  <a href="tel:+905369640549" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>+90 536 964 0549
 
                   </a>
                 </div>
