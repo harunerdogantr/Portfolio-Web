@@ -570,7 +570,7 @@ function App() {
                 </div>
                 <div>
                   <h4 style={{ color: 'var(--text-color)', marginBottom: '0.25rem' }}>E-posta</h4>
-                  <a href="harunerdogan308@email.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>harunerdogan@gmail.com</a>
+                  <a href="mailto:harunerdogan308@email.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>harunerdogan@gmail.com</a>
                 </div>
               </div>
 
