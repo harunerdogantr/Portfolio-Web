@@ -395,4 +395,32 @@ h1, h2, h3, h4, h5, h6 {
 .metric-1 { animation-delay: 0.2s; }
 .metric-2 { animation-delay: 0.4s; }
 .metric-3 { animation-delay: 0.6s; }
-.metric-4 { animation-delay: 0.8s; } 
+.metric-4 { animation-delay: 0.8s; }
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Hover durumunda animasyonu durdur */
+.slider-content:hover {
+  animation-play-state: paused;
+}
+
+/* Logo hover efekti */
+.slider-content img {
+  transition: transform 0.3s ease;
+}
+
+.slider-content img:hover {
+  transform: scale(1.1);
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+} 
