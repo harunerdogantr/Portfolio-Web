@@ -1,0 +1,67 @@
+.tech-stack-container {
+  width: 100%;
+  padding: 40px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.tech-stack-container h3 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 24px;
+}
+
+.logo-slider {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+  background: #f8f9fa;
+}
+
+.logo-slide-track {
+  display: flex;
+  width: calc(200px * 16); /* logo genişliği * logo sayısı */
+  animation: slide 20s linear infinite;
+}
+
+.logo-slide {
+  flex: 0 0 200px; /* Sabit genişlik */
+  padding: 10px 30px;
+  text-align: center;
+}
+
+.logo-slide img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+
+.logo-slide img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobil cihazlar için responsive tasarım */
+@media (max-width: 768px) {
+  .logo-slide {
+    flex: 0 0 150px;
+    padding: 10px 20px;
+  }
+  
+  .logo-slide img {
+    width: 40px;
+    height: 40px;
+  }
+} 
