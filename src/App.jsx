@@ -234,41 +234,272 @@ function App() {
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
           gap: '2rem'
         }}>
-          {[1, 2, 3].map((project) => (
-            <div
-              key={project}
-              className="project-card"
-              style={{
-                backgroundColor: 'white',
-                borderRadius: '8px',
-                overflow: 'hidden',
-                boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
-              }}
-            >
+          {/* Safe Astr Projesi */}
+          <div className="project-card" style={{
+            backgroundColor: 'white',
+            borderRadius: '8px',
+            overflow: 'hidden',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            transition: 'transform 0.3s ease',
+            ':hover': {
+              transform: 'translateY(-5px)'
+            }
+          }}>
+            <div style={{ position: 'relative', paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
               <img
-                src={`https://via.placeholder.com/400x250?text=Proje+${project}`}
-                alt={`Proje ${project}`}
+                src="https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Safe Astr Projesi"
                 style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
                   width: '100%',
-                  height: '200px',
+                  height: '100%',
                   objectFit: 'cover'
                 }}
               />
-              <div style={{ padding: '1.5rem' }}>
-                <h3 style={{ marginBottom: '1rem', color: 'var(--text-color)' }}>
-                  Proje {project}
-                </h3>
-                <p style={{ color: '#666', marginBottom: '1rem' }}>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <div style={{ display: 'flex', gap: '1rem' }}>
-                  <a href="#" className="btn btn-primary" style={{ flex: 1 }}>Demo</a>
-                  <a href="#" className="btn" style={{ flex: 1, backgroundColor: '#f3f4f6' }}>GitHub</a>
-                </div>
+            </div>
+            <div style={{ padding: '1.5rem' }}>
+              <h3 style={{ 
+                marginBottom: '1rem', 
+                color: 'var(--text-color)',
+                fontSize: '1.5rem'
+              }}>
+                Safe As                
+              </h3>
+              <p style={{ 
+                color: '#666', 
+                marginBottom: '1rem',
+                lineHeight: '1.6'
+              }}>
+                Amazon mülkiyeti altında geliştirilmiş modern bir platform.
+                Kullanıcılar için güvenli ve kullanıcı dostu bir deneyim sunar.
+              </p>
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem',
+                marginBottom: '1rem'
+              }}>
+                {['React', 'Node.js', 'Blockchain', 'Web3.js', 'Solidity'].map((tech) => (
+                  <span
+                    key={tech}
+                    style={{
+                      backgroundColor: 'var(--primary-color)',
+                      color: 'white',
+                      padding: '0.25rem 0.75rem',
+                      borderRadius: '15px',
+                      fontSize: '0.875rem'
+                    }}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div style={{ display: 'flex', gap: '1rem' }}>
+                <a 
+                  href="https://safeastr.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-primary" 
+                  style={{ flex: 1 }}
+                >
+                  Canlı Demo
+                </a>
+                <a 
+                  href="https://github.com/harunerdogantr" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn" 
+                  style={{ 
+                    flex: 1, 
+                    backgroundColor: '#f3f4f6',
+                    color: 'var(--text-color)'
+                  }}
+                >
+                  GitHub
+                </a>
               </div>
             </div>
-          ))}
+          </div>
+
+          {/* IPS Solidarity Projesi */}
+          <div className="project-card" style={{
+            backgroundColor: 'white',
+            borderRadius: '8px',
+            overflow: 'hidden',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            transition: 'transform 0.3s ease',
+            ':hover': {
+              transform: 'translateY(-5px)'
+            }
+          }}>
+            <div style={{ position: 'relative', paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
+              <img
+                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="IPS Solidarity Projesi"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div style={{ padding: '1.5rem' }}>
+              <h3 style={{ 
+                marginBottom: '1rem', 
+                color: 'var(--text-color)',
+                fontSize: '1.5rem'
+              }}>
+                Ipssolidarity 
+              </h3>
+              <p style={{ 
+                color: '#666', 
+                marginBottom: '1rem',
+                lineHeight: '1.6'
+              }}>
+                Uluslararası dayanışma platformu. Topluluk etkileşimi ve 
+                iş birliği için geliştirilmiş web uygulaması.
+              </p>
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem',
+                marginBottom: '1rem'
+              }}>
+                {['React', 'Node.js', 'MongoDB', 'Express', 'Socket.io'].map((tech) => (
+                  <span
+                    key={tech}
+                    style={{
+                      backgroundColor: 'var(--primary-color)',
+                      color: 'white',
+                      padding: '0.25rem 0.75rem',
+                      borderRadius: '15px',
+                      fontSize: '0.875rem'
+                    }}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div style={{ display: 'flex', gap: '1rem' }}>
+                <a 
+                  href="http://www.ipssolidarity.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-primary" 
+                  style={{ flex: 1 }}
+                >
+                  Canlı Demo
+                </a>
+                <a 
+                  href="https://github.com/harunerdogantr" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn" 
+                  style={{ 
+                    flex: 1, 
+                    backgroundColor: '#f3f4f6',
+                    color: 'var(--text-color)'
+                  }}
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Öğrenci Lokasyonu Projesi */}
+          <div className="project-card" style={{
+            backgroundColor: 'white',
+            borderRadius: '8px',
+            overflow: 'hidden',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            transition: 'transform 0.3s ease',
+            ':hover': {
+              transform: 'translateY(-5px)'
+            }
+          }}>
+            <div style={{ position: 'relative', paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
+              <img
+                src="https://images.pexels.com/photos/3760529/pexels-photo-3760529.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                alt="Öğrenci Lokasyonu Projesi"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div style={{ padding: '1.5rem' }}>
+              <h3 style={{ 
+                marginBottom: '1rem', 
+                color: 'var(--text-color)',
+                fontSize: '1.5rem'
+              }}>
+                Öğrenci Lokasyonu
+              </h3>
+              <p style={{ 
+                color: '#666', 
+                marginBottom: '1rem',
+                lineHeight: '1.6'
+              }}>
+                Öğrencilerin konum bazlı bilgilerini yönetebilecekleri,
+                interaktif harita entegrasyonlu modern web uygulaması.
+              </p>
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem',
+                marginBottom: '1rem'
+              }}>
+                {['React', 'Google Maps API', 'Firebase', 'Material-UI'].map((tech) => (
+                  <span
+                    key={tech}
+                    style={{
+                      backgroundColor: 'var(--primary-color)',
+                      color: 'white',
+                      padding: '0.25rem 0.75rem',
+                      borderRadius: '15px',
+                      fontSize: '0.875rem'
+                    }}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div style={{ display: 'flex', gap: '1rem' }}>
+                <a 
+                  href="#" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-primary" 
+                  style={{ flex: 1 }}
+                >
+                  Canlı Demo
+                </a>
+                <a 
+                  href="https://github.com/harunerdogantr" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn" 
+                  style={{ 
+                    flex: 1, 
+                    backgroundColor: '#f3f4f6',
+                    color: 'var(--text-color)'
+                  }}
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -291,7 +522,7 @@ function App() {
         <div className="slider-container" style={{
           whiteSpace: 'nowrap',
           display: 'inline-block',
-          animation: 'slide 30s linear infinite',
+          animation: 'slide 20s linear infinite',
         }}>
           <div className="slider-content" style={{
             display: 'flex',
@@ -816,7 +1047,7 @@ function App() {
             textAlign: 'center',
             color: '#9ca3af'
           }}>
-            <p>&copy; {new Date().getFullYear()} @harunerdogan Portfolio. Tüm hakları saklıdır.</p>
+            <p>&copy; {new Date().getFullYear()} harunerdogan Portfolio. Tüm hakları saklıdır.</p>
           </div>
         </div>
       </footer>
