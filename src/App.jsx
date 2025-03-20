@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './styles/main.css';
+import CounterSection from './components/CounterSection';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -130,7 +131,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="container section" style={{ backgroundColor: 'transparent', padding: '4rem 0' }}>
+      <section id="about" className="container section" style={{ backgroundColor: 'transparent', padding: '4rem 0', marginBottom: '10rem' }}>
         <h2 style={{
           fontSize: '2.5rem',
           marginBottom: '2rem',
@@ -218,6 +219,60 @@ function App() {
         </div>
       </section>
 
+      {/* Technologies Section */}
+      <section className="tech-section" style={{ marginBottom: '10rem' }}>
+        <div className="container">
+          <h2 style={{
+            fontSize: '2.5rem',
+            marginBottom: '3rem',
+            color: 'var(--text-color)',
+            textAlign: 'center'
+          }}>
+            Teknolojiler
+          </h2>
+        </div>
+        <div style={{ overflow: 'hidden', position: 'relative' }}>
+          <div className="tech-container">
+            {/* İlk set */}
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+            
+            {/* İkinci set (sürekli akış için) */}
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+            
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="container section" style={{ backgroundColor: 'transparent', padding: '4rem 0' }}>
         <h2 style={{
@@ -234,6 +289,108 @@ function App() {
           gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
           gap: '2rem'
         }}>
+          {/* Portfolio Web Projesi */}
+            <div className="project-card" style={{
+              backgroundColor: 'var(--card-background)',
+              borderRadius: '8px',
+              overflow: 'hidden',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+              transition: 'transform 0.3s ease',
+              border: '1px solid var(--border-color)'
+            }}>
+              <div style={{ position: 'relative', paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
+                <img
+                  src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Portfolio Web Projesi"
+                  style={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover'
+                  }}
+                />
+              </div>
+              <div style={{ padding: '1.5rem' }}>
+                <h3 style={{ 
+                  marginBottom: '1rem', 
+                  color: 'var(--text-color)',
+                  fontSize: '1.5rem'
+                }}>
+                  Kişisel Portfolio Web Sitesi
+                </h3>
+                <p style={{ 
+                  color: 'var(--text-secondary)', 
+                  marginBottom: '1rem',
+                  lineHeight: '1.6'
+                }}>
+                  Modern ve responsive tasarıma sahip kişisel portfolio web sitesi.
+                  React ve modern web teknolojileri kullanılarak geliştirildi.
+                  Projeler, teknolojiler ve iletişim bilgilerini içeren kapsamlı bir portfolyo.
+                </p>
+                <div style={{
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '0.5rem',
+                  marginBottom: '1rem'
+                }}>
+                  {['React', 'JavaScript', 'CSS3', 'Responsive Design', 'Vercel'].map((tech) => (
+                    <span
+                      key={tech}
+                      style={{
+                        backgroundColor: 'var(--primary-color)',
+                        color: 'white',
+                        padding: '0.25rem 0.75rem',
+                        borderRadius: '15px',
+                        fontSize: '0.875rem'
+                      }}
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                <div style={{
+                  display: 'flex',
+                  gap: '1rem'
+                }}>
+                  <a
+                    href="https://harunerdogan.vercel.app"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      backgroundColor: 'var(--primary-color)',
+                      color: 'white',
+                      padding: '0.5rem 1rem',
+                      borderRadius: '4px',
+                      textDecoration: 'none',
+                      fontSize: '0.875rem',
+                      transition: 'background-color 0.3s ease'
+                    }}
+                  >
+                    Canlı Demo
+                  </a>
+                  <a
+                    href="https://github.com/harunerdogantr/Portfolio-Web"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      backgroundColor: 'transparent',
+                      color: 'var(--text-color)',
+                      padding: '0.5rem 1rem',
+                      borderRadius: '4px',
+                      textDecoration: 'none',
+                      fontSize: '0.875rem',
+                      border: '1px solid var(--border-color)',
+                      transition: 'border-color 0.3s ease'
+                    }}
+                  >
+                    Kaynak Kod
+                  </a>
+                </div>
+              </div>
+            </div>
+
           {/* Safe Astr Projesi */}
           <div className="project-card" style={{
             backgroundColor: 'white',
@@ -503,63 +660,9 @@ function App() {
         </div>
       </section>
 
-      {/* Technologies Slider Section */}
-      <section style={{ 
-        padding: '4rem 0',
-        backgroundColor: 'var(--card-background)',
-        overflow: 'hidden',
-        position: 'relative'
-      }}>
-        <h2 style={{
-          fontSize: '2.5rem',
-          marginBottom: '3rem',
-          color: 'var(--text-color)',
-          textAlign: 'center'
-        }}>
-          Teknolojiler
-        </h2>
-
-        <div className="slider-container" style={{
-          whiteSpace: 'nowrap',
-          display: 'inline-block',
-          animation: 'slide 20s linear infinite',
-        }}>
-          <div className="slider-content" style={{
-            display: 'flex',
-            gap: '4rem',
-            padding: '2rem'
-          }}>
-            {/* Teknoloji logoları - Her biri 2 kez tekrarlanıyor sürekli akış için */}
-            {[...Array(2)].map((_, index) => (
-              <div key={index} style={{ display: 'flex', gap: '4rem' }}>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" 
-                     alt="React" 
-                     style={{ width: '80px', height: '80px' }} />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" 
-                     alt="JavaScript" 
-                     style={{ width: '80px', height: '80px' }} />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" 
-                     alt="HTML5" 
-                     style={{ width: '80px', height: '80px' }} />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" 
-                     alt="CSS3" 
-                     style={{ width: '80px', height: '80px' }} />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" 
-                     alt="Node.js" 
-                     style={{ width: '80px', height: '80px' }} />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" 
-                     alt="MongoDB" 
-                     style={{ width: '80px', height: '80px' }} />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" 
-                     alt="Git" 
-                     style={{ width: '80px', height: '80px' }} />
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" 
-                     alt="TypeScript" 
-                     style={{ width: '80px', height: '80px' }} />
-              </div>
-            ))}
-          </div>
-        </div>
+      {/* Counter Section */}
+      <section style={{ backgroundColor: 'var(--card-background)', padding: '2rem 0', marginBottom: '10rem' }}>
+        <CounterSection />
       </section>
 
       {/* Contact Section */}
@@ -772,7 +875,7 @@ function App() {
                   justifyContent: 'center'
                 }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
-                    <path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/>
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                   </svg>
                 </div>
                 <div>
@@ -819,8 +922,7 @@ function App() {
                   justifyContent: 'center'
                 }}>
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
-                    <path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z"/>
-                    <path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z"/>
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                   </svg>
                 </div>
                 <div>
@@ -1056,4 +1158,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;

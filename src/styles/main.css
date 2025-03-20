@@ -96,6 +96,41 @@ body {
   gap: 2rem;
 }
 
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.tech-section {
+  background-color: var(--card-background);
+  padding: 4rem 0;
+  overflow: hidden;
+}
+
+.tech-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  animation: slideRight 30s linear infinite;
+  width: max-content;
+}
+
+.tech-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     padding: 0 1rem;
@@ -440,4 +475,4 @@ h1, h2, h3, h4, h5, h6 {
 .slider-container {
   position: relative;
   width: 100%;
-} 
+}
