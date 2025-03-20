@@ -318,7 +318,7 @@ function App() {
                   color: 'var(--text-color)',
                   fontSize: '1.5rem'
                 }}>
-                  Kişisel Portfolio Web Sitesi
+                 Portfolio
                 </h3>
                 <p style={{ 
                   color: 'var(--text-secondary)', 
@@ -385,7 +385,7 @@ function App() {
                       transition: 'border-color 0.3s ease'
                     }}
                   >
-                    Kaynak Kod
+                    Github
                   </a>
                 </div>
               </div>
@@ -422,7 +422,7 @@ function App() {
                 color: 'var(--text-color)',
                 fontSize: '1.5rem'
               }}>
-                Safe As                
+                Safe-As                
               </h3>
               <p style={{ 
                 color: '#666', 
@@ -511,7 +511,7 @@ function App() {
                 color: 'var(--text-color)',
                 fontSize: '1.5rem'
               }}>
-                Ipssolidarity 
+                IPSSOLİDARİTY 
               </h3>
               <p style={{ 
                 color: '#666', 
