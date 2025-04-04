@@ -1,0 +1,18 @@
+.scroll-animation {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform, opacity;
+}
+
+.scroll-animation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobil cihazlar için performans optimizasyonu */
+@media (max-width: 768px) {
+  .scroll-animation {
+    transform: translateY(50px);
+  }
+} 

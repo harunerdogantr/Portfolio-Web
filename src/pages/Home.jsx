@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import ScrollAnimation from '../components/ScrollAnimation';
 
 const Home = () => {
   return (
@@ -10,50 +11,62 @@ const Home = () => {
         gap: '2rem',
         minHeight: '80vh'
       }}>
-        <div style={{ flex: 1 }}>
-          <h1 style={{
-            fontSize: '3rem',
-            marginBottom: '1.5rem',
-            color: 'var(--text-color)'
+        <ScrollAnimation delay={200}>
+          <div style={{ 
+            flex: 1,
+            padding: '2rem',
+            backgroundColor: 'rgba(255, 255, 255, 0.9)',
+            borderRadius: '1rem',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
           }}>
-            Merhaba, Ben <span style={{ color: 'var(--primary-color)' }}>İsminiz</span>
-          </h1>
-          <p style={{
-            fontSize: '1.25rem',
-            marginBottom: '2rem',
-            lineHeight: '1.8',
-            color: '#666'
-          }}>
-            Frontend Developer olarak modern ve kullanıcı dostu web uygulamaları geliştiriyorum.
-            React, JavaScript ve modern web teknolojileri konusunda uzmanım.
-          </p>
-          <div style={{ display: 'flex', gap: '1rem' }}>
-            <Link to="/projects" className="btn btn-primary">
-              Projelerimi Gör
-            </Link>
-            <Link to="/contact" className="btn" style={{
-              backgroundColor: '#f3f4f6',
+            <h1 style={{
+              fontSize: '3rem',
+              marginBottom: '1.5rem',
               color: 'var(--text-color)'
             }}>
-              İletişime Geç
-            </Link>
+              Merhaba, Ben <span style={{ color: 'var(--primary-color)' }}>İsminiz</span>
+            </h1>
+            <p style={{
+              fontSize: '1.25rem',
+              marginBottom: '2rem',
+              lineHeight: '1.8',
+              color: '#666'
+            }}>
+              Frontend Developer olarak modern ve kullanıcı dostu web uygulamaları geliştiriyorum.
+              React, JavaScript ve modern web teknolojileri konusunda uzmanım.
+            </p>
+            <div style={{ display: 'flex', gap: '1rem' }}>
+              <Link to="/projects" className="btn btn-primary">
+                Projelerimi Gör
+              </Link>
+              <Link to="/contact" className="btn" style={{
+                backgroundColor: '#f3f4f6',
+                color: 'var(--text-color)'
+              }}>
+                İletişime Geç
+              </Link>
+            </div>
           </div>
-        </div>
-        <div style={{ 
-          flex: 1,
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-          <div style={{
-            width: '400px',
-            height: '400px',
-            backgroundColor: 'var(--primary-color)',
-            borderRadius: '50%',
-            opacity: '0.1'
+        </ScrollAnimation>
+        <ScrollAnimation delay={400}>
+          <div style={{ 
+            flex: 1,
+            display: 'flex',
+            justifyContent: 'center',
+            padding: '2rem'
           }}>
-            {/* Buraya profilinizin resmini ekleyebilirsiniz */}
+            <div style={{
+              width: '400px',
+              height: '400px',
+              backgroundColor: 'var(--primary-color)',
+              borderRadius: '50%',
+              opacity: '0.1',
+              boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+            }}>
+              {/* Buraya profilinizin resmini ekleyebilirsiniz */}
+            </div>
           </div>
-        </div>
+        </ScrollAnimation>
       </div>
     </div>
   );
