@@ -399,7 +399,7 @@ function App() {
           }}>
             <div style={{ position: 'relative', paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
               <img
-                src="https://images.pexels.com/photos/844124/pexels-photo-844124.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZwH-rDxDvdysda8BvrAZFShUhctAXClRSmA&s"
                 alt="Safe Astr Projesi"
                 style={{
                   position: 'absolute',
@@ -488,7 +488,7 @@ function App() {
           }}>
             <div style={{ position: 'relative', paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
               <img
-                src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                src="https://r.resimlink.com/m8QBR0.jpeg"
                 alt="IPS Solidarity Projesi"
                 style={{
                   position: 'absolute',
@@ -540,6 +540,95 @@ function App() {
               <div style={{ display: 'flex', gap: '1rem' }}>
                 <a 
                   href="http://www.ipssolidarity.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn btn-primary" 
+                  style={{ flex: 1 }}
+                >
+                  Canlı Demo
+                </a>
+                <a 
+                  href="https://github.com/harunerdogantr" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn" 
+                  style={{ 
+                    flex: 1, 
+                    backgroundColor: '#f3f4f6',
+                    color: 'var(--text-color)'
+                  }}
+                >
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* İskenderun News Projesi */}
+          <div className="project-card" style={{
+            backgroundColor: 'white',
+            borderRadius: '8px',
+            overflow: 'hidden',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+            transition: 'transform 0.3s ease',
+            ':hover': {
+              transform: 'translateY(-5px)'
+            }
+          }}>
+            <div style={{ position: 'relative', paddingTop: '56.25%' }}> {/* 16:9 aspect ratio */}
+              <img
+                src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="İskenderun News Projesi"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover'
+                }}
+              />
+            </div>
+            <div style={{ padding: '1.5rem' }}>
+              <h3 style={{ 
+                marginBottom: '1rem', 
+                color: 'var(--text-color)',
+                fontSize: '1.5rem'
+              }}>
+                İskenderun News
+              </h3>
+              <p style={{ 
+                color: '#666', 
+                marginBottom: '1rem',
+                lineHeight: '1.6'
+              }}>
+                İskenderun ve çevresindeki güncel haberleri sunan modern bir haber platformu.
+                Kullanıcı dostu arayüzü ve güncel içerikleriyle bölgesel haber kaynağı.
+              </p>
+              <div style={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                gap: '0.5rem',
+                marginBottom: '1rem'
+              }}>
+                {['React', 'Next.js', 'Tailwind CSS', 'Node.js', 'MongoDB'].map((tech) => (
+                  <span
+                    key={tech}
+                    style={{
+                      backgroundColor: 'var(--primary-color)',
+                      color: 'white',
+                      padding: '0.25rem 0.75rem',
+                      borderRadius: '15px',
+                      fontSize: '0.875rem'
+                    }}
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+              <div style={{ display: 'flex', gap: '1rem' }}>
+                <a 
+                  href="https://iskenderunnews.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn btn-primary" 
