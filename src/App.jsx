@@ -1,9 +1,21 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './styles/main.css';
 import CounterSection from './components/CounterSection';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100,
+      easing: 'ease-in-out',
+      delay: 50
+    });
+  }, []);
 
   const socialLinks = {
     github: "https://github.com/harunerdogantr",
@@ -83,7 +95,7 @@ function App() {
           gap: '2rem',
           width: '100%'
         }}>
-          <div style={{ flex: 1 }}>
+          <div style={{ flex: 1 }} data-aos="fade-right" data-aos-delay="200">
             <h1 style={{
               fontSize: '3rem',
               marginBottom: '1.5rem',
@@ -131,7 +143,7 @@ function App() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="container section" style={{ backgroundColor: 'transparent', padding: '4rem 0', marginBottom: '10rem' }}>
+      <section id="about" className="container section" style={{ backgroundColor: 'transparent', padding: '4rem 0', marginBottom: '10rem' }} data-aos="fade-up" data-aos-delay="300">
         <h2 style={{
           fontSize: '2.5rem',
           marginBottom: '2rem',
@@ -220,7 +232,7 @@ function App() {
       </section>
 
       {/* Technologies Section */}
-      <section className="tech-section" style={{ marginBottom: '10rem' }}>
+      <section className="tech-section" style={{ marginBottom: '10rem' }} data-aos="fade-up" data-aos-delay="300">
         <div className="container">
           <h2 style={{
             fontSize: '2.5rem',
@@ -234,47 +246,30 @@ function App() {
         <div style={{ overflow: 'hidden', position: 'relative' }}>
           <div className="tech-container">
             {/* İlk set */}
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" data-aos="fade-up" data-aos-delay="400" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" data-aos="fade-up" data-aos-delay="450" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" data-aos="fade-up" data-aos-delay="500" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" data-aos="fade-up" data-aos-delay="550" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" data-aos="fade-up" data-aos-delay="600" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" data-aos="fade-up" data-aos-delay="650" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" data-aos="fade-up" data-aos-delay="700" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" data-aos="fade-up" data-aos-delay="750" />
             
             {/* İkinci set (sürekli akış için) */}
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
-            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" />
-            
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" data-aos="fade-up" data-aos-delay="800" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" data-aos="fade-up" data-aos-delay="850" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" data-aos="fade-up" data-aos-delay="900" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" data-aos="fade-up" data-aos-delay="950" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" data-aos="fade-up" data-aos-delay="1000" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" data-aos="fade-up" data-aos-delay="1050" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" data-aos="fade-up" data-aos-delay="1100" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" data-aos="fade-up" data-aos-delay="1150" />
           </div>
         </div>
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="container section" style={{ backgroundColor: 'transparent', padding: '4rem 0' }}>
+      <section id="projects" className="container section" style={{ backgroundColor: 'transparent', padding: '4rem 0' }} data-aos="fade-up" data-aos-delay="400">
         <h2 style={{
           fontSize: '2.5rem',
           marginBottom: '3rem',
@@ -666,7 +661,7 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="container section" style={{ backgroundColor: 'transparent', padding: '4rem 0' }}>
+      <section id="contact" className="container section" style={{ backgroundColor: 'transparent', padding: '4rem 0' }} data-aos="fade-up" data-aos-delay="500">
         <h2 style={{
           fontSize: '2.5rem',
           marginBottom: '1rem',

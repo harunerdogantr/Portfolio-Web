@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import CountUp from 'react-countup';
-import WOW from 'wow.js';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright, faProjectDiagram, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import { faSmile } from '@fortawesome/free-regular-svg-icons';
@@ -8,14 +9,10 @@ import '../styles/CounterSection.css';
 
 const CounterSection = () => {
   useEffect(() => {
-    const wow = new WOW({
-      boxClass: 'wow',
-      animateClass: 'animated',
-      offset: 0,
-      mobile: true,
-      live: true
+    AOS.init({
+      duration: 1000,
+      once: true
     });
-    wow.init();
   }, []);
 
   const counterData = [
@@ -24,28 +21,28 @@ const CounterSection = () => {
       count: 170,
       title: "Çalışılan Marka",
       color: "color-1",
-      animation: "fadeInLeft"
+      animation: "fade-right"
     },
     {
       icon: faSmile,
       count: 338,
       title: "Mutlu Müşteri",
       color: "color-3",
-      animation: "fadeInUp"
+      animation: "fade-up"
     },
     {
       icon: faProjectDiagram,
       count: 127,
       title: "Bitirilen Proje",
       color: "color-4",
-      animation: "fadeInRight"
+      animation: "fade-left"
     },
     {
       icon: faMobileAlt,
       count: 43,
       title: "Mobil Proje",
       color: "color-2",
-      animation: "fadeInRight"
+      animation: "fade-left"
     }
   ];
 
@@ -59,8 +56,8 @@ const CounterSection = () => {
         {counterData.map((item, index) => (
           <div
             key={index}
-            className={`wow ${item.animation}`}
-            data-wow-delay="0.3s"
+            data-aos={item.animation}
+            data-aos-delay={index * 100}
           >
             <div className={`counter-box ${item.color}`}>
               <div className="icon">
