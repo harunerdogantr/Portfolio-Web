@@ -254,6 +254,20 @@ function App() {
             <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" data-aos="fade-up" data-aos-delay="650" />
             <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" data-aos="fade-up" data-aos-delay="700" />
             <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" data-aos="fade-up" data-aos-delay="750" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" data-aos="fade-up" data-aos-delay="800" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" data-aos="fade-up" data-aos-delay="850" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" data-aos="fade-up" data-aos-delay="900" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" data-aos="fade-up" data-aos-delay="950" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" data-aos="fade-up" data-aos-delay="1000" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" data-aos="fade-up" data-aos-delay="1050" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" data-aos="fade-up" data-aos-delay="1100" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" data-aos="fade-up" data-aos-delay="800" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" data-aos="fade-up" data-aos-delay="850" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" data-aos="fade-up" data-aos-delay="900" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" data-aos="fade-up" data-aos-delay="950" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" data-aos="fade-up" data-aos-delay="1000" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" data-aos="fade-up" data-aos-delay="1050" />
+            <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" data-aos="fade-up" data-aos-delay="1100" />
             
             {/* İkinci set (sürekli akış için) */}
             <img className="tech-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" data-aos="fade-up" data-aos-delay="800" />
@@ -628,7 +642,7 @@ function App() {
               </div>
               <div style={{ display: 'flex', gap: '1rem' }}>
                 <a 
-                  href="https://iskenderunnews.vercel.app/" 
+                  href="https://iskenderunhaber.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="btn btn-primary" 
